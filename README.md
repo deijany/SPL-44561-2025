@@ -6,7 +6,15 @@ This repository contains the code and Jupyter notebook accompanying the paper:
 
 > **Efficient Computation of Order–K Index-Powered Weighted Sums Using Cascaded Accumulators**  
 > Deijany Rodriguez Linares, Oksana Moryakova, and Håkan Johansson  
-> IEEE Signal Processing Letters, doi: 10.1109/LSP.2026.3661843.  
+> IEEE Signal Processing Letters, doi: [10.1109/LSP.2026.3661843](https://doi.org/10.1109/LSP.2026.3661843).
+
+## Overview
+
+Given a sequence $$v[n]$$ and integers $$K, N \geq 0$$, the objective is to compute $$S_K(N) = \sum_{n=0}^{N-1} n^K v[n]$$ in real time on a sample-by-sample basis (avoiding sample buffering).
+
+The proposed equivalence, based on cascaded accumulators, is presented in the paper above and in the accompanying notebook. The figure below compares its computational cost with that of [addition-chain exponentiation](https://en.wikipedia.org/wiki/Addition-chain_exponentiation) for $$K = 2, 4, 7$$ and $$N = 1, \dots, 100$$. The proposed method reduces the number of multiplications several-fold.
+
+<img src="./docs/performance.png" alt="Performance comparison between cascaded accumulators and addition-chain exponentiation for K = 2, 4, 7" width="600">
 
 ## Repository locations
 
