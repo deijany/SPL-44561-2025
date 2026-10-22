@@ -8,6 +8,11 @@ This repository contains the code and Jupyter notebook accompanying the paper:
 > Deijany Rodriguez Linares, Oksana Moryakova, and Håkan Johansson  
 > IEEE Signal Processing Letters, doi: [10.1109/LSP.2026.3661843](https://doi.org/10.1109/LSP.2026.3661843).
 
+[![IEEE SPL 2026](https://img.shields.io/badge/IEEE-SPL_2026-00629B)](https://doi.org/10.1109/LSP.2026.3661843)
+[![arXiv](https://img.shields.io/badge/arXiv-2503.07577-b31b1b.svg)](https://arxiv.org/abs/2509.15069)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deijany/order_k_index_powered_weighted_sums_using_cascaded_accumulators/blob/main/accumulators_notebook.ipynb)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ## Overview
 
 Given a sequence $$v[n]$$ and integers $$K, N \geq 0$$, the objective is to compute $$S_K(N) = \sum_{n=0}^{N-1} n^K v[n]$$ in real time on a sample-by-sample basis (avoiding sample buffering).
